@@ -1,5 +1,6 @@
 # database.py
 import pymysql
+import OS
 
 def get_connection():
     return pymysql.connect(
@@ -11,3 +12,5 @@ def get_connection():
 
     conn = get_connection()
     print("Connected to database")
+
+db_path = os.path.join(os.path.dirname(__file__), "Database", "gesundheit_dashboard")
