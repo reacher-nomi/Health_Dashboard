@@ -38,5 +38,6 @@ jobs:
         files: |
           dist/HealthDashboard.exe
           Database/gesundheit_dashboard.db
+        tag_name: ${{ github.ref_name }}  # Use the tag that triggered the workflow
       env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN_HEALTHDASHBOARD}}
+        GITHUB_TOKEN: ${{ secrets.TOKEN_HEALTHDASHBOARD }}
