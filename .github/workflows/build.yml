@@ -28,6 +28,8 @@ jobs:
     - name: Build .exe with PyInstaller
       run: |
         pyinstaller --onefile --windowed --name HealthDashboard main.py
+        pyinstaller --onefile --windowed --name HealthDashboard --hidden-import pymysql main.py
+
 
     - name: Check if .exe was created
       run: dir dist
