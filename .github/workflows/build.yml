@@ -39,4 +39,4 @@ jobs:
           dist/HealthDashboard.exe
           Database/gesundheit_dashboard.db
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.TOKEN_HEALTHDASHBOARD}}
