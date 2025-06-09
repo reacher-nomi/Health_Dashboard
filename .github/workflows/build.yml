@@ -23,7 +23,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pyinstaller pyqt6
+        pip install pyinstaller pyqt6 pymysql 
 
     - name: Build .exe with PyInstaller
       run: |
